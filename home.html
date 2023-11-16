@@ -88,21 +88,26 @@
 </head>
 <body>
   <div class="login-container">
-      <h1 class="fw-bold">Welcome to SecureChat</h1>
-      <h2>The most secure web-based chat application</h2>
-      <form action="/login" method="post">
-          <div class="form-field">
-              <input type="text" name="username" placeholder="Username" required>
-          </div>
-          <div class="form-field">
-              <input type="password" name="password" placeholder="Password" required>
-          </div>
-          <div class="form-field">
-              <button type="button" class="login-button">Login</button>
-              <button type="button" class="create-button mt-2">Create account</button>
-          </div>
-      </form>
-  </div>
+    <h1 class="fw-bold">Welcome to SecureChat</h1>
+    <h2>The most secure web-based chat application</h2>
+    <form action="/login" method="post" id="loginForm">
+        <div class="form-field">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+        </div>
+        <div class="form-field">
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="form-field">
+            <button type="button" class="login-button" onclick="login()">Login</button>
+            <button type="button" class="create-button mt-2" onclick="createAccount()">Create account</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+  
 </body>
 
 </body>
