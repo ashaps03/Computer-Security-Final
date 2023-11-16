@@ -104,8 +104,47 @@
     </form>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+  function loadScript(src, callback){
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = src;
+      script.onload = callback;
+      document.head.appendChild(script);
+  }
 
+  loadScript('{% static "myapp4/js/ticketmaster.js" %}', function(){
+      console.log('Script loaded!');
+  });
+
+  function login() {
+      // Implement your login logic here
+      alert('Login button clicked');
+  }
+
+  function createAccount() {
+    // Get the values from the input fields
+    const usernameInput = document.getElementById('username').value;
+    const passwordInput = document.getElementById('password').value;
+
+    // Hash the password using SHA-256
+    const encoder = new TextEncoder();
+    const data = encoder.encode(passwordInput);
+
+    // Use the crypto.subtle.digest API for hashing
+    crypto.subtle.digest('SHA-256', data)
+        .then(hashBuffer => {
+            // Convert the hash ArrayBuffer to a hex string
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
+
+            // Display the hashed password and username
+            alert('Hashed Password: ' + hashHex + '\nUsername: ' + usernameInput);
+        })
+        .catch(error => console.error('Hashing error:', error));
+}
+
+</script>
 
   
 </body>
