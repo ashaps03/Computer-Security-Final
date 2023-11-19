@@ -104,6 +104,8 @@
     </form>
 </div>
 
+<!-- Load external JavaScript file -->
+
 <script>
   function loadScript(src, callback){
       var script = document.createElement('script');
@@ -140,6 +142,27 @@
 
             // Display the hashed password and username
             alert('Hashed Password: ' + hashHex + '\nUsername: ' + usernameInput);
+
+            // Now, send the data to your server
+            const url = '/your-server-endpoint';  // Replace with your server endpoint
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    username: usernameInput,
+                    password: hashHex,
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
         })
         .catch(error => console.error('Hashing error:', error));
 }
