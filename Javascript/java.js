@@ -36,7 +36,7 @@ function createAccount() {
           alert('Hashed Password: ' + hashHex + '\nUsername: ' + usernameInput);
 
           // Now, send the data to your server
-          const url = 'http://127.0.0.1:3306';  // Replace with your actual server endpoint
+          const url = 'http://127.0.0.1:3306/create-account';  // Replace with your actual server endpoint
 
           fetch(url, {
               method: 'POST',
