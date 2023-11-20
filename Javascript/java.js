@@ -8,7 +8,7 @@ function loadScript(src, callback){
 }
 
 loadScript('{% static "myapp4/js/ticketmaster.js" %}', function(){
-    console.log('Script loaded!');
+    console.log('Script loaded!'); 
 });
 
 function login() {

@@ -24,3 +24,6 @@
 /Users/ashleysanchez/Documents/GitHub/Computer-Security-Final/Computer-Security-Final/obj/Debug/net8.0/Computer-Security-Final.pdb
 /Users/ashleysanchez/Documents/GitHub/Computer-Security-Final/Computer-Security-Final/obj/Debug/net8.0/Computer-Security-Final.genruntimeconfig.cache
 /Users/ashleysanchez/Documents/GitHub/Computer-Security-Final/Computer-Security-Final/obj/Debug/net8.0/ref/Computer-Security-Final.dll
+/Users/ashleysanchez/Documents/GitHub/Computer-Security-Final/Computer-Security-Final/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/ashleysanchez/Documents/GitHub/Computer-Security-Final/Computer-Security-Final/obj/Debug/net8.0/Computer-Security-Final.csproj.AssemblyReference.cache
+/Users/ashleysanchez/Documents/GitHub/Computer-Security-Final/Computer-Security-Final/obj/Debug/net8.0/Computer-Security-Final.csproj.CopyComplete
