@@ -7,8 +7,8 @@ function loadScript(src, callback){
     document.head.appendChild(script);
 }
 
-loadScript('{% static "myapp4/js/ticketmaster.js" %}', function(){
-    console.log('Script loaded!'); 
+loadScript('../Javascript/java.js', function() {
+    console.log('Script loaded!');
 });
 
 function login() {
