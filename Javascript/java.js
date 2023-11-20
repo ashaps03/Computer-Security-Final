@@ -7,7 +7,7 @@ function loadScript(src, callback){
     document.head.appendChild(script);
 }
 
-loadScript('../Javascript/java.js', function() {
+loadScript('/Javascript/java.js', function() {
     console.log('Script loaded!');
 });
 
